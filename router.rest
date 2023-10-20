@@ -1,0 +1,38 @@
+GET http://localhost:3000/products
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name": "kwooka",
+    "description":"bum clothes",
+    "price":9.99,
+    "quantity":99,
+    "category": "Men"
+}
+
+###
+GET http://localhost:3000/products/65308e60cdb9c9c8842b36b7
+
+
+### 
+PUT http://localhost:3000/products/65308d91cd4249f8a9390c13
+Content-Type: application/json
+
+{
+    "name": "sulek",
+    "description":"compress clothes",
+    "price":299.99,
+    "quantity":99,
+    "category": "Men"
+}
+
+###
+DELETE http://localhost:3000/products/65308d91cd4249f8a9390c13
+
+###
+DELETE http://localhost:3000/products
+
+###
+GET http://localhost:3000/products/name=[sulek]
